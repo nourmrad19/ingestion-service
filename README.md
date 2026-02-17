@@ -2,6 +2,12 @@
 
 This repository contains Docker configurations for running the ingestion service infrastructure components.
 
+## 📖 Documentation
+
+- **[Quick Start Guide](QUICKSTART.md)** - Get started in 3 easy steps
+- **[Docker Interface Guide](DOCKER-INTERFACE-GUIDE.md)** - How to access services from Docker Desktop
+- This README - Complete documentation
+
 ## Services Overview
 
 The ingestion service consists of four main components:
@@ -71,6 +77,22 @@ docker compose up -d rabbitmq
 ```
 
 ## Accessing Services
+
+### Quick Access to Web Interfaces
+
+Run this script to open all web interfaces in your browser:
+
+**Linux/macOS:**
+```bash
+./open-web-interfaces.sh
+```
+
+**Windows:**
+```batch
+open-web-interfaces.bat
+```
+
+Or manually access them:
 
 ### Redis
 - **Port:** 6379

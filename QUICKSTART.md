@@ -9,15 +9,34 @@
 
 ### 2. Access the Web Interfaces
 
-#### MinIO Console
+#### Option A: Automatic (Easiest!)
+Run this script to open all web interfaces:
+```bash
+./open-web-interfaces.sh    # Linux/macOS
+# OR
+open-web-interfaces.bat     # Windows
+```
+
+#### Option B: Manual Access
+
+##### MinIO Console
 Open your browser and go to: **http://localhost:9001**
 - Username: `minio_access_key`
 - Password: `minio_secret_key`
 
-#### RabbitMQ Management
+##### RabbitMQ Management
 Open your browser and go to: **http://localhost:15672**
 - Username: `user`
 - Password: `password`
+
+#### Option C: Using Docker Desktop
+1. Open Docker Desktop
+2. Click **Containers** in the sidebar
+3. Find `ingestion-rabbitmq` or `ingestion-minio`
+4. Click on the port numbers (15672 or 9001)
+5. Your browser will open automatically!
+
+See [DOCKER-INTERFACE-GUIDE.md](DOCKER-INTERFACE-GUIDE.md) for detailed Docker Desktop instructions.
 
 ### 3. Stop All Services When Done
 ```bash
